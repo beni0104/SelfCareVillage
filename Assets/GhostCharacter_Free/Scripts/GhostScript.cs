@@ -26,6 +26,9 @@ public class GhostScript : MonoBehaviour
 
     // moving speed
     [SerializeField] private float Speed = 4;
+    
+    // floating height
+    [SerializeField] private float FloatHeight = 0.3f;
 
     void Start()
     {
@@ -155,16 +158,27 @@ public class GhostScript : MonoBehaviour
     {
         if(Ctrl.enabled)
         {
+            Vector3 position = transform.position;
             if(CheckGrounded())
             {
-                if(MoveDirection.y < -0.1f)
-                {
-                    MoveDirection.y = -0.1f;
-                }
+                position.y = Mathf.Max(position.y, GetGroundHeight() + FloatHeight);
             }
-            MoveDirection.y -= 0.1f;
-            Ctrl.Move(MoveDirection * Time.deltaTime);
+            else
+            {
+                position.y = GetGroundHeight() + FloatHeight;
+            }
+            transform.position = position;
         }
+    }
+    private float GetGroundHeight()
+    {
+        Ray ray = new Ray(this.transform.position + Vector3.up * 0.1f, Vector3.down);
+        RaycastHit hit;
+        if (Physics.Raycast(ray, out hit))
+        {
+            return hit.point.y;
+        }
+        return transform.position.y - Ctrl.height / 2;
     }
     //---------------------------------------------------------------------
     // whether it is grounded

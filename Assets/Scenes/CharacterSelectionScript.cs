@@ -31,7 +31,7 @@ public class CharacterSelectionScript : MonoBehaviour
 
     public void StartGame()
     {
-        
+        SceneManager.LoadScene("World");
     }
     
     // Start is called before the first frame update
