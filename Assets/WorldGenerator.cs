@@ -46,7 +46,7 @@ public class GameGenerator : MonoBehaviour
 	//public int NumberOfRooms;
 
 	// this will determine whether we've placed the character controller
-	private bool characterPlaced = false;
+	//private bool characterPlaced = false;
 
 	// Use this for initialization
 	void Start()

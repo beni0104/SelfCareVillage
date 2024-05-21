@@ -16,39 +16,36 @@ public class GhostScript : MonoBehaviour
     private static readonly int AttackState = Animator.StringToHash("Base Layer.attack_shift");
     private static readonly int DissolveState = Animator.StringToHash("Base Layer.dissolve");
     private static readonly int AttackTag = Animator.StringToHash("Attack");
-    // // dissolve
-    // [SerializeField] private SkinnedMeshRenderer[] MeshR;
-    // private float Dissolve_value = 1;
-    // private bool DissolveFlg = false;
-    // private const int maxHP = 3;
-    // private int HP = maxHP;
-    // private Text HP_text;
+    // dissolve
+    [SerializeField] private SkinnedMeshRenderer[] MeshR;
+    private float Dissolve_value = 1;
+    private bool DissolveFlg = false;
+    private const int maxHP = 3;
+    private int HP = maxHP;
+    private Text HP_text;
 
     // moving speed
     [SerializeField] private float Speed = 4;
-    
-    // floating height
-    [SerializeField] private float FloatHeight = 0.3f;
 
     void Start()
     {
         Anim = this.GetComponent<Animator>();
         Ctrl = this.GetComponent<CharacterController>();
-        // HP_text = GameObject.Find("Canvas/HP").GetComponent<Text>();
-        // HP_text.text = "HP " + HP.ToString();
+        HP_text = GameObject.Find("Canvas/HP").GetComponent<Text>();
+        HP_text.text = "HP " + HP.ToString();
     }
 
     void Update()
     {
         STATUS();
         GRAVITY();
-        // Respawn();
+        Respawn();
         // this character status
         if(!PlayerStatus.ContainsValue( true ))
         {
             MOVE();
             PlayerAttack();
-            // Damage();
+            Damage();
         }
         else if(PlayerStatus.ContainsValue( true ))
         {
@@ -63,7 +60,7 @@ public class GhostScript : MonoBehaviour
             }
             if(status_name == Dissolve)
             {
-                // PlayerDissolve();
+                PlayerDissolve();
             }
             else if(status_name == Attack)
             {
@@ -74,17 +71,17 @@ public class GhostScript : MonoBehaviour
                 // nothing method
             }
         }
-        // // Dissolve
-        // if(HP <= 0 && !DissolveFlg)
-        // {
-        //     Anim.CrossFade(DissolveState, 0.1f, 0, 0);
-        //     DissolveFlg = true;
-        // }
+        // Dissolve
+        if(HP <= 0 && !DissolveFlg)
+        {
+            Anim.CrossFade(DissolveState, 0.1f, 0, 0);
+            DissolveFlg = true;
+        }
         // processing at respawn
-        // else if(HP == maxHP && DissolveFlg)
-        // {
-        //     DissolveFlg = false;
-        // }
+        else if(HP == maxHP && DissolveFlg)
+        {
+            DissolveFlg = false;
+        }
     }
 
     //---------------------------------------------------------------------
@@ -103,14 +100,14 @@ public class GhostScript : MonoBehaviour
     private void STATUS ()
     {
         // during dissolve
-        // if(DissolveFlg && HP <= 0)
-        // {
-        //     PlayerStatus[Dissolve] = true;
-        // }
-        // else if(!DissolveFlg)
-        // {
-        //     PlayerStatus[Dissolve] = false;
-        // }
+        if(DissolveFlg && HP <= 0)
+        {
+            PlayerStatus[Dissolve] = true;
+        }
+        else if(!DissolveFlg)
+        {
+            PlayerStatus[Dissolve] = false;
+        }
         // during attacking
         if(Anim.GetCurrentAnimatorStateInfo(0).tagHash == AttackTag)
         {
@@ -130,19 +127,19 @@ public class GhostScript : MonoBehaviour
             PlayerStatus[Surprised] = false;
         }
     }
-    // // dissolve shading
-    // private void PlayerDissolve ()
-    // {
-    //     Dissolve_value -= Time.deltaTime;
-    //     for(int i = 0; i < MeshR.Length; i++)
-    //     {
-    //         MeshR[i].material.SetFloat("_Dissolve", Dissolve_value);
-    //     }
-    //     if(Dissolve_value <= 0)
-    //     {
-    //         Ctrl.enabled = false;
-    //     }
-    // }
+    // dissolve shading
+    private void PlayerDissolve ()
+    {
+        Dissolve_value -= Time.deltaTime;
+        for(int i = 0; i < MeshR.Length; i++)
+        {
+            MeshR[i].material.SetFloat("_Dissolve", Dissolve_value);
+        }
+        if(Dissolve_value <= 0)
+        {
+            Ctrl.enabled = false;
+        }
+    }
     // play a animation of Attack
     private void PlayerAttack ()
     {
@@ -158,27 +155,16 @@ public class GhostScript : MonoBehaviour
     {
         if(Ctrl.enabled)
         {
-            Vector3 position = transform.position;
             if(CheckGrounded())
             {
-                position.y = Mathf.Max(position.y, GetGroundHeight() + FloatHeight);
+                if(MoveDirection.y < -0.1f)
+                {
+                    MoveDirection.y = -0.1f;
+                }
             }
-            else
-            {
-                position.y = GetGroundHeight() + FloatHeight;
-            }
-            transform.position = position;
+            MoveDirection.y -= 0.1f;
+            Ctrl.Move(MoveDirection * Time.deltaTime);
         }
-    }
-    private float GetGroundHeight()
-    {
-        Ray ray = new Ray(this.transform.position + Vector3.up * 0.1f, Vector3.down);
-        RaycastHit hit;
-        if (Physics.Raycast(ray, out hit))
-        {
-            return hit.point.y;
-        }
-        return transform.position.y - Ctrl.height / 2;
     }
     //---------------------------------------------------------------------
     // whether it is grounded
@@ -294,40 +280,40 @@ public class GhostScript : MonoBehaviour
     //---------------------------------------------------------------------
     // damage
     //---------------------------------------------------------------------
-    // private void Damage ()
-    // {
-    //     // Damaged by outside field.
-    //     if(Input.GetKeyUp(KeyCode.S))
-    //     {
-    //         Anim.CrossFade(SurprisedState, 0.1f, 0, 0);
-    //         HP--;
-    //         HP_text.text = "HP " + HP.ToString();
-    //     }
-    // }
+    private void Damage ()
+    {
+        // Damaged by outside field.
+        if(Input.GetKeyUp(KeyCode.S))
+        {
+            Anim.CrossFade(SurprisedState, 0.1f, 0, 0);
+            HP--;
+            HP_text.text = "HP " + HP.ToString();
+        }
+    }
     //---------------------------------------------------------------------
     // respawn
     //---------------------------------------------------------------------
-    // private void Respawn ()
-    // {
-    //     if(Input.GetKeyDown(KeyCode.Space))
-    //     {
-    //         // player HP
-    //         HP = maxHP;
-    //         
-    //         Ctrl.enabled = false;
-    //         this.transform.position = Vector3.zero; // player position
-    //         this.transform.rotation = Quaternion.Euler(Vector3.zero); // player facing
-    //         Ctrl.enabled = true;
-    //         
-    //         // reset Dissolve
-    //         Dissolve_value = 1;
-    //         for(int i = 0; i < MeshR.Length; i++)
-    //         {
-    //             MeshR[i].material.SetFloat("_Dissolve", Dissolve_value);
-    //         }
-    //         // reset animation
-    //         Anim.CrossFade(IdleState, 0.1f, 0, 0);
-    //     }
-    // }
+    private void Respawn ()
+    {
+        if(Input.GetKeyDown(KeyCode.Space))
+        {
+            // player HP
+            HP = maxHP;
+            
+            Ctrl.enabled = false;
+            this.transform.position = Vector3.zero; // player position
+            this.transform.rotation = Quaternion.Euler(Vector3.zero); // player facing
+            Ctrl.enabled = true;
+            
+            // reset Dissolve
+            Dissolve_value = 1;
+            for(int i = 0; i < MeshR.Length; i++)
+            {
+                MeshR[i].material.SetFloat("_Dissolve", Dissolve_value);
+            }
+            // reset animation
+            Anim.CrossFade(IdleState, 0.1f, 0, 0);
+        }
+    }
 }
 }

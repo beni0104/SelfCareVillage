@@ -393,7 +393,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Self Care Village
+  m_text: 'Some very nice title
 
 '
   m_isRightToLeft: 0
