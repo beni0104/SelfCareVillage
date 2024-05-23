@@ -9,11 +9,12 @@ public class FirstPersonController : MonoBehaviour
     public float runSpeed = 12f;
     public float jumpPower = 7f;
     public float gravity = 10f;
-
+    public GameObject PausePanel;
+    
 
     public float lookSpeed = 2f;
     public float lookXLimit = 45f;
-
+    
 
     Vector3 moveDirection = Vector3.zero;
     float rotationX = 0;
@@ -28,6 +29,7 @@ public class FirstPersonController : MonoBehaviour
     CharacterController characterController;
     void Start()
     {
+        PausePanel.SetActive(false);
         characterController = GetComponent<CharacterController>();
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
@@ -53,8 +55,15 @@ public class FirstPersonController : MonoBehaviour
 
     void Update()
     {
+        if (Input.GetKey(KeyCode.P))
+        {
+            PausePanel.SetActive(true);
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
+            Time.timeScale = 0;
+        }
 
-        if (dialogueState == false)
+        if (dialogueState == false && Time.timeScale == 1)
         {
             //Handles Movement
             Vector3 forward = transform.TransformDirection(Vector3.forward);
