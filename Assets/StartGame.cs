@@ -57,7 +57,7 @@ public class StartGame : MonoBehaviour
             switch (text_number)
             {
                 case 1:
-                    NewDialogue("Welcome to SelfCare village - a small and quiet town surrounded by grassy fields and beautiful scenery.");
+                    NewDialogue("Welcome to Happiness village - a small and quiet town surrounded by grassy fields and beautiful scenery.");
                     break;
                 case 2:
                     NewDialogue("Whether you’re here because of stress, anxiety or fatigue, this place will help you take a break from your worries.");

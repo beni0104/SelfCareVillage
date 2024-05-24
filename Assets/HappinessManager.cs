@@ -65,6 +65,7 @@ public class HappinessManager : MonoBehaviour
     {
         string text = "Happiness level: " + happinessLevel + "%";
         level.SetText(text);
+        print(happinessLevel);
     }
 
     public void updateLevel(int value)
