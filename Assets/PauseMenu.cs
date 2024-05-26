@@ -28,6 +28,8 @@ public class PauseMenu : MonoBehaviour
 
     public void ExitToMainMenu()
     {
+        PausePanel.SetActive(false);
+        Time.timeScale = 1;
         SceneManager.LoadScene("StartGame");
     }
 }
