@@ -2,9 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class HappinessManager : MonoBehaviour
 {
+    //private HappinessManager manager;
     private static int happinessLevel = 0;
 
     [SerializeField] private TextMeshProUGUI level;
@@ -12,11 +14,13 @@ public class HappinessManager : MonoBehaviour
 
     static int cupcakes = 0;
     static bool pickedCupcake = false;
-    static int set_picked_cupcake = 0;
+    static int game_end = 0;
 
     // Start is called before the first frame update
     void Start()
     {
+        DontDestroyOnLoad(gameObject);
+
         string text = "Happiness level: " + happinessLevel + "%";
         level.SetText(text);
 
@@ -38,6 +42,12 @@ public class HappinessManager : MonoBehaviour
             resetInteractiveText();
             set_picked_cupcake = 0;
         }*/
+
+        if(happinessLevel > 100)
+        {
+            game_end = 2;
+            SceneManager.LoadScene("EndGame");
+        }
     }
 
     // functions for "press F to interact"
@@ -103,5 +113,30 @@ public class HappinessManager : MonoBehaviour
     public void giveCupcakes()
     {
         cupcakes = 0;
+    }
+
+    // -------------------------------------------------------------------------------------
+
+    // functions to end game
+    // 1 - player chose to end game
+    // 2 - player died from happiness
+    // 3 - player went out of map
+
+    public void end_game(int code)
+    {
+        game_end = code;
+    }
+
+    public int get_code()
+    {
+        return game_end;
+    }
+
+    public void reset_everything()
+    {
+        game_end = 0;
+        cupcakes = 0;
+        pickedCupcake = false;
+        happinessLevel = 0;
     }
 }

@@ -51,6 +51,7 @@ public class Cupcake : MonoBehaviour
             pressed_F = 1;
 
             one_Cupcake.SetActive(false);
+            ConversationEnded();
         }
 
         /*

@@ -103,7 +103,7 @@ public class Pig_Wisdom : MonoBehaviour
                             break;
                         default:
                             conversation_number = conversation_number + 1;
-                            manager.updateLevel(5);
+                            manager.updateLevel(10);
                             ConversationEnded();
                             break;
                     }
@@ -116,7 +116,7 @@ public class Pig_Wisdom : MonoBehaviour
                             break;
                         default:
                             conversation_number = conversation_number + 1;
-                            manager.updateLevel(5);
+                            manager.updateLevel(10);
                             ConversationEnded();
                             break;
                     }
@@ -129,7 +129,7 @@ public class Pig_Wisdom : MonoBehaviour
                             break;
                         default:
                             conversation_number = conversation_number + 1;
-                            manager.updateLevel(5);
+                            manager.updateLevel(10);
                             ConversationEnded();
                             break;
                     }
@@ -145,7 +145,7 @@ public class Pig_Wisdom : MonoBehaviour
                             break;
                         default:
                             conversation_number = conversation_number + 1;
-                            manager.updateLevel(5);
+                            manager.updateLevel(10);
                             ConversationEnded();
                             break;
                     }
@@ -158,7 +158,7 @@ public class Pig_Wisdom : MonoBehaviour
                             break;
                         default:
                             conversation_number = conversation_number + 1;
-                            manager.updateLevel(5);
+                            manager.updateLevel(10);
                             ConversationEnded();
                             break;
                     }

@@ -3,60 +3,40 @@
   "WorkspaceRootPath": "C:\\Users\\Vortex\\Desktop\\Andreea\\SelfCareVillage\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{427BB995-CE76-34E1-D1A8-F230F4AB6F30}|Assembly-CSharp.csproj|C:\\Users\\Vortex\\Desktop\\Andreea\\SelfCareVillage\\assets\\startgame.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{427BB995-CE76-34E1-D1A8-F230F4AB6F30}|Assembly-CSharp.csproj|solutionrelative:assets\\startgame.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{427BB995-CE76-34E1-D1A8-F230F4AB6F30}|Assembly-CSharp.csproj|c:\\users\\vortex\\desktop\\andreea\\selfcarevillage\\assets\\nicepig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{427BB995-CE76-34E1-D1A8-F230F4AB6F30}|Assembly-CSharp.csproj|solutionrelative:assets\\nicepig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{427BB995-CE76-34E1-D1A8-F230F4AB6F30}|Assembly-CSharp.csproj|C:\\Users\\Vortex\\Desktop\\Andreea\\SelfCareVillage\\assets\\bosspig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{427BB995-CE76-34E1-D1A8-F230F4AB6F30}|Assembly-CSharp.csproj|solutionrelative:assets\\bosspig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{427BB995-CE76-34E1-D1A8-F230F4AB6F30}|Assembly-CSharp.csproj|C:\\Users\\Vortex\\Desktop\\Andreea\\SelfCareVillage\\assets\\pig_wisdom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{427BB995-CE76-34E1-D1A8-F230F4AB6F30}|Assembly-CSharp.csproj|solutionrelative:assets\\pig_wisdom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{427BB995-CE76-34E1-D1A8-F230F4AB6F30}|Assembly-CSharp.csproj|C:\\Users\\Vortex\\Desktop\\Andreea\\SelfCareVillage\\assets\\script.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{427BB995-CE76-34E1-D1A8-F230F4AB6F30}|Assembly-CSharp.csproj|solutionrelative:assets\\script.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{427BB995-CE76-34E1-D1A8-F230F4AB6F30}|Assembly-CSharp.csproj|C:\\Users\\Vortex\\Desktop\\Andreea\\SelfCareVillage\\assets\\npcllama.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{427BB995-CE76-34E1-D1A8-F230F4AB6F30}|Assembly-CSharp.csproj|solutionrelative:assets\\npcllama.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{427BB995-CE76-34E1-D1A8-F230F4AB6F30}|Assembly-CSharp.csproj|C:\\Users\\Vortex\\Desktop\\Andreea\\SelfCareVillage\\assets\\mushroom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{427BB995-CE76-34E1-D1A8-F230F4AB6F30}|Assembly-CSharp.csproj|solutionrelative:assets\\mushroom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{427BB995-CE76-34E1-D1A8-F230F4AB6F30}|Assembly-CSharp.csproj|C:\\Users\\Vortex\\Desktop\\Andreea\\SelfCareVillage\\assets\\cupcake.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{427BB995-CE76-34E1-D1A8-F230F4AB6F30}|Assembly-CSharp.csproj|solutionrelative:assets\\cupcake.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{427BB995-CE76-34E1-D1A8-F230F4AB6F30}|Assembly-CSharp.csproj|C:\\Users\\Vortex\\Desktop\\Andreea\\SelfCareVillage\\assets\\npclady.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{427BB995-CE76-34E1-D1A8-F230F4AB6F30}|Assembly-CSharp.csproj|solutionrelative:assets\\npclady.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{427BB995-CE76-34E1-D1A8-F230F4AB6F30}|Assembly-CSharp.csproj|C:\\Users\\Vortex\\Desktop\\Andreea\\SelfCareVillage\\assets\\wellinteraction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{427BB995-CE76-34E1-D1A8-F230F4AB6F30}|Assembly-CSharp.csproj|solutionrelative:assets\\wellinteraction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{427BB995-CE76-34E1-D1A8-F230F4AB6F30}|Assembly-CSharp.csproj|C:\\Users\\Vortex\\Desktop\\Andreea\\SelfCareVillage\\assets\\npccat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{427BB995-CE76-34E1-D1A8-F230F4AB6F30}|Assembly-CSharp.csproj|solutionrelative:assets\\npccat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{427BB995-CE76-34E1-D1A8-F230F4AB6F30}|Assembly-CSharp.csproj|C:\\Users\\Vortex\\Desktop\\Andreea\\SelfCareVillage\\assets\\happinessmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{427BB995-CE76-34E1-D1A8-F230F4AB6F30}|Assembly-CSharp.csproj|solutionrelative:assets\\happinessmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{427BB995-CE76-34E1-D1A8-F230F4AB6F30}|Assembly-CSharp.csproj|c:\\users\\vortex\\desktop\\andreea\\selfcarevillage\\assets\\npcllama.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{427BB995-CE76-34E1-D1A8-F230F4AB6F30}|Assembly-CSharp.csproj|solutionrelative:assets\\npcllama.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{427BB995-CE76-34E1-D1A8-F230F4AB6F30}|Assembly-CSharp.csproj|C:\\Users\\Vortex\\Desktop\\Andreea\\SelfCareVillage\\assets\\pausemenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{427BB995-CE76-34E1-D1A8-F230F4AB6F30}|Assembly-CSharp.csproj|solutionrelative:assets\\pausemenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{427BB995-CE76-34E1-D1A8-F230F4AB6F30}|Assembly-CSharp.csproj|C:\\Users\\Vortex\\Desktop\\Andreea\\SelfCareVillage\\assets\\npclady.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{427BB995-CE76-34E1-D1A8-F230F4AB6F30}|Assembly-CSharp.csproj|solutionrelative:assets\\npclady.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{427BB995-CE76-34E1-D1A8-F230F4AB6F30}|Assembly-CSharp.csproj|C:\\Users\\Vortex\\Desktop\\Andreea\\SelfCareVillage\\assets\\firstpersoncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{427BB995-CE76-34E1-D1A8-F230F4AB6F30}|Assembly-CSharp.csproj|solutionrelative:assets\\firstpersoncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{427BB995-CE76-34E1-D1A8-F230F4AB6F30}|Assembly-CSharp.csproj|C:\\Users\\Vortex\\Desktop\\Andreea\\SelfCareVillage\\assets\\cupcake.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{427BB995-CE76-34E1-D1A8-F230F4AB6F30}|Assembly-CSharp.csproj|solutionrelative:assets\\cupcake.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Vortex\\Desktop\\Andreea\\SelfCareVillage\\Library\\PackageCache\\com.unity.collab-proxy@2.3.1\\Editor\\PlasticSCM\\FindWorkspace.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Library\\PackageCache\\com.unity.collab-proxy@2.3.1\\Editor\\PlasticSCM\\FindWorkspace.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{427BB995-CE76-34E1-D1A8-F230F4AB6F30}|Assembly-CSharp.csproj|C:\\Users\\Vortex\\Desktop\\Andreea\\SelfCareVillage\\assets\\manager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{427BB995-CE76-34E1-D1A8-F230F4AB6F30}|Assembly-CSharp.csproj|solutionrelative:assets\\manager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{427BB995-CE76-34E1-D1A8-F230F4AB6F30}|Assembly-CSharp.csproj|C:\\Users\\Vortex\\Desktop\\Andreea\\SelfCareVillage\\assets\\endgame.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{427BB995-CE76-34E1-D1A8-F230F4AB6F30}|Assembly-CSharp.csproj|solutionrelative:assets\\endgame.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{427BB995-CE76-34E1-D1A8-F230F4AB6F30}|Assembly-CSharp.csproj|C:\\Users\\Vortex\\Desktop\\Andreea\\SelfCareVillage\\assets\\scenes\\startgamescript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{427BB995-CE76-34E1-D1A8-F230F4AB6F30}|Assembly-CSharp.csproj|solutionrelative:assets\\scenes\\startgamescript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{427BB995-CE76-34E1-D1A8-F230F4AB6F30}|Assembly-CSharp.csproj|C:\\Users\\Vortex\\Desktop\\Andreea\\SelfCareVillage\\assets\\mushroom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{427BB995-CE76-34E1-D1A8-F230F4AB6F30}|Assembly-CSharp.csproj|solutionrelative:assets\\mushroom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -66,60 +46,73 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 11,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "NicePig.cs",
-              "DocumentMoniker": "C:\\Users\\Vortex\\Desktop\\Andreea\\SelfCareVillage\\Assets\\NicePig.cs",
-              "RelativeDocumentMoniker": "Assets\\NicePig.cs",
-              "ToolTip": "C:\\Users\\Vortex\\Desktop\\Andreea\\SelfCareVillage\\Assets\\NicePig.cs",
-              "RelativeToolTip": "Assets\\NicePig.cs",
-              "ViewState": "AQIAAF4AAAAAAAAAAAAAAHoAAAAJAAAA",
+              "DocumentIndex": 2,
+              "Title": "NPCLlama.cs",
+              "DocumentMoniker": "C:\\Users\\Vortex\\Desktop\\Andreea\\SelfCareVillage\\Assets\\NPCLlama.cs",
+              "RelativeDocumentMoniker": "Assets\\NPCLlama.cs",
+              "ToolTip": "C:\\Users\\Vortex\\Desktop\\Andreea\\SelfCareVillage\\Assets\\NPCLlama.cs",
+              "RelativeToolTip": "Assets\\NPCLlama.cs",
+              "ViewState": "AQIAAFkAAAAAAAAAAAAIwHAAAAAaAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-24T12:53:13.109Z",
+              "WhenOpened": "2024-05-28T09:48:18.19Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "BossPig.cs",
-              "DocumentMoniker": "C:\\Users\\Vortex\\Desktop\\Andreea\\SelfCareVillage\\Assets\\BossPig.cs",
-              "RelativeDocumentMoniker": "Assets\\BossPig.cs",
-              "ToolTip": "C:\\Users\\Vortex\\Desktop\\Andreea\\SelfCareVillage\\Assets\\BossPig.cs",
-              "RelativeToolTip": "Assets\\BossPig.cs",
-              "ViewState": "AQIAAGIAAAAAAAAAAAAIwMAAAAAAAAAA",
+              "DocumentIndex": 0,
+              "Title": "WellInteraction.cs",
+              "DocumentMoniker": "C:\\Users\\Vortex\\Desktop\\Andreea\\SelfCareVillage\\Assets\\WellInteraction.cs",
+              "RelativeDocumentMoniker": "Assets\\WellInteraction.cs",
+              "ToolTip": "C:\\Users\\Vortex\\Desktop\\Andreea\\SelfCareVillage\\Assets\\WellInteraction.cs",
+              "RelativeToolTip": "Assets\\WellInteraction.cs",
+              "ViewState": "AQIAAFwAAAAAAAAAAAAIwD4AAAAcAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-24T12:48:48.841Z"
+              "WhenOpened": "2024-05-28T09:44:38.177Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Pig_Wisdom.cs",
-              "DocumentMoniker": "C:\\Users\\Vortex\\Desktop\\Andreea\\SelfCareVillage\\Assets\\Pig_Wisdom.cs",
-              "RelativeDocumentMoniker": "Assets\\Pig_Wisdom.cs",
-              "ToolTip": "C:\\Users\\Vortex\\Desktop\\Andreea\\SelfCareVillage\\Assets\\Pig_Wisdom.cs",
-              "RelativeToolTip": "Assets\\Pig_Wisdom.cs",
-              "ViewState": "AQIAAEIAAAAAAAAAAAAcwFkAAAAqAAAA",
+              "DocumentIndex": 7,
+              "Title": "StartGameScript.cs",
+              "DocumentMoniker": "C:\\Users\\Vortex\\Desktop\\Andreea\\SelfCareVillage\\Assets\\Scenes\\StartGameScript.cs",
+              "RelativeDocumentMoniker": "Assets\\Scenes\\StartGameScript.cs",
+              "ToolTip": "C:\\Users\\Vortex\\Desktop\\Andreea\\SelfCareVillage\\Assets\\Scenes\\StartGameScript.cs",
+              "RelativeToolTip": "Assets\\Scenes\\StartGameScript.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAzAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-24T12:42:01.241Z"
+              "WhenOpened": "2024-05-28T09:21:08.696Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Script.cs",
-              "DocumentMoniker": "C:\\Users\\Vortex\\Desktop\\Andreea\\SelfCareVillage\\Assets\\Script.cs",
-              "RelativeDocumentMoniker": "Assets\\Script.cs",
-              "ToolTip": "C:\\Users\\Vortex\\Desktop\\Andreea\\SelfCareVillage\\Assets\\Script.cs",
-              "RelativeToolTip": "Assets\\Script.cs",
-              "ViewState": "AQIAAJIAAAAAAAAAAAAIwLQAAAAAAAAA",
+              "DocumentIndex": 5,
+              "Title": "manager.cs",
+              "DocumentMoniker": "C:\\Users\\Vortex\\Desktop\\Andreea\\SelfCareVillage\\Assets\\manager.cs",
+              "RelativeDocumentMoniker": "Assets\\manager.cs",
+              "ToolTip": "C:\\Users\\Vortex\\Desktop\\Andreea\\SelfCareVillage\\Assets\\manager.cs",
+              "RelativeToolTip": "Assets\\manager.cs",
+              "ViewState": "AQIAACsAAAAAAAAAAAAgwEAAAAAtAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-24T12:35:40.247Z"
+              "WhenOpened": "2024-05-28T09:05:30.96Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
+              "Title": "EndGame.cs",
+              "DocumentMoniker": "C:\\Users\\Vortex\\Desktop\\Andreea\\SelfCareVillage\\Assets\\EndGame.cs",
+              "RelativeDocumentMoniker": "Assets\\EndGame.cs",
+              "ToolTip": "C:\\Users\\Vortex\\Desktop\\Andreea\\SelfCareVillage\\Assets\\EndGame.cs",
+              "RelativeToolTip": "Assets\\EndGame.cs",
+              "ViewState": "AQIAABYAAAAAAAAAAAAgwDEAAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-28T08:32:51.001Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "Mushroom.cs",
               "DocumentMoniker": "C:\\Users\\Vortex\\Desktop\\Andreea\\SelfCareVillage\\Assets\\Mushroom.cs",
               "RelativeDocumentMoniker": "Assets\\Mushroom.cs",
@@ -131,113 +124,41 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 4,
               "Title": "Cupcake.cs",
               "DocumentMoniker": "C:\\Users\\Vortex\\Desktop\\Andreea\\SelfCareVillage\\Assets\\Cupcake.cs",
               "RelativeDocumentMoniker": "Assets\\Cupcake.cs",
               "ToolTip": "C:\\Users\\Vortex\\Desktop\\Andreea\\SelfCareVillage\\Assets\\Cupcake.cs",
               "RelativeToolTip": "Assets\\Cupcake.cs",
-              "ViewState": "AQIAADEAAAAAAAAAAAAIwFMAAAAAAAAA",
+              "ViewState": "AQIAADEAAAAAAAAAAAAIwDUAAAAgAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-24T12:15:01.515Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "NPCLlama.cs",
-              "DocumentMoniker": "C:\\Users\\Vortex\\Desktop\\Andreea\\SelfCareVillage\\Assets\\NPCLlama.cs",
-              "RelativeDocumentMoniker": "Assets\\NPCLlama.cs",
-              "ToolTip": "C:\\Users\\Vortex\\Desktop\\Andreea\\SelfCareVillage\\Assets\\NPCLlama.cs",
-              "RelativeToolTip": "Assets\\NPCLlama.cs",
-              "ViewState": "AQIAAAUAAAAAAAAAAAAAABgAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-24T12:09:03.273Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "PauseMenu.cs",
-              "DocumentMoniker": "C:\\Users\\Vortex\\Desktop\\Andreea\\SelfCareVillage\\Assets\\PauseMenu.cs",
-              "RelativeDocumentMoniker": "Assets\\PauseMenu.cs",
-              "ToolTip": "C:\\Users\\Vortex\\Desktop\\Andreea\\SelfCareVillage\\Assets\\PauseMenu.cs",
-              "RelativeToolTip": "Assets\\PauseMenu.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAAbAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-24T11:32:43.283Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "HappinessManager.cs",
-              "DocumentMoniker": "C:\\Users\\Vortex\\Desktop\\Andreea\\SelfCareVillage\\Assets\\HappinessManager.cs",
-              "RelativeDocumentMoniker": "Assets\\HappinessManager.cs",
-              "ToolTip": "C:\\Users\\Vortex\\Desktop\\Andreea\\SelfCareVillage\\Assets\\HappinessManager.cs",
-              "RelativeToolTip": "Assets\\HappinessManager.cs",
-              "ViewState": "AQIAACwAAAAAAAAAAAAwwEMAAAAeAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-24T11:29:17.145Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 1,
               "Title": "NPCCat.cs",
               "DocumentMoniker": "C:\\Users\\Vortex\\Desktop\\Andreea\\SelfCareVillage\\Assets\\NPCCat.cs",
               "RelativeDocumentMoniker": "Assets\\NPCCat.cs",
               "ToolTip": "C:\\Users\\Vortex\\Desktop\\Andreea\\SelfCareVillage\\Assets\\NPCCat.cs",
               "RelativeToolTip": "Assets\\NPCCat.cs",
-              "ViewState": "AQIAAAIBAAAAAAAAAAAQwEsBAAAAAAAA",
+              "ViewState": "AQIAAKsAAAAAAAAAAAAmwMMAAAAdAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-24T10:13:05.778Z"
+              "WhenOpened": "2024-05-24T10:13:05.778Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 3,
               "Title": "NPCLady.cs",
               "DocumentMoniker": "C:\\Users\\Vortex\\Desktop\\Andreea\\SelfCareVillage\\Assets\\NPCLady.cs",
               "RelativeDocumentMoniker": "Assets\\NPCLady.cs",
               "ToolTip": "C:\\Users\\Vortex\\Desktop\\Andreea\\SelfCareVillage\\Assets\\NPCLady.cs",
               "RelativeToolTip": "Assets\\NPCLady.cs",
-              "ViewState": "AQIAACcBAAAAAAAAAAAWwDkBAAAfAAAA",
+              "ViewState": "AQIAALMAAAAAAAAAAAAuwM8AAAAdAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-24T10:12:35.831Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "StartGame.cs",
-              "DocumentMoniker": "C:\\Users\\Vortex\\Desktop\\Andreea\\SelfCareVillage\\Assets\\StartGame.cs",
-              "RelativeDocumentMoniker": "Assets\\StartGame.cs",
-              "ToolTip": "C:\\Users\\Vortex\\Desktop\\Andreea\\SelfCareVillage\\Assets\\StartGame.cs",
-              "RelativeToolTip": "Assets\\StartGame.cs",
-              "ViewState": "AQIAACwAAAAAAAAAAAAIwDsAAAA1AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-24T09:02:01.962Z",
+              "WhenOpened": "2024-05-24T10:12:35.831Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "FindWorkspace.cs",
-              "DocumentMoniker": "C:\\Users\\Vortex\\Desktop\\Andreea\\SelfCareVillage\\Library\\PackageCache\\com.unity.collab-proxy@2.3.1\\Editor\\PlasticSCM\\FindWorkspace.cs",
-              "RelativeDocumentMoniker": "Library\\PackageCache\\com.unity.collab-proxy@2.3.1\\Editor\\PlasticSCM\\FindWorkspace.cs",
-              "ToolTip": "C:\\Users\\Vortex\\Desktop\\Andreea\\SelfCareVillage\\Library\\PackageCache\\com.unity.collab-proxy@2.3.1\\Editor\\PlasticSCM\\FindWorkspace.cs",
-              "RelativeToolTip": "Library\\PackageCache\\com.unity.collab-proxy@2.3.1\\Editor\\PlasticSCM\\FindWorkspace.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACMAAAA7AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-24T09:01:24.091Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "FirstPersonController.cs",
-              "DocumentMoniker": "C:\\Users\\Vortex\\Desktop\\Andreea\\SelfCareVillage\\Assets\\FirstPersonController.cs",
-              "RelativeDocumentMoniker": "Assets\\FirstPersonController.cs",
-              "ToolTip": "C:\\Users\\Vortex\\Desktop\\Andreea\\SelfCareVillage\\Assets\\FirstPersonController.cs",
-              "RelativeToolTip": "Assets\\FirstPersonController.cs",
-              "ViewState": "AQIAAA4AAAAAAAAAAAAQwBgAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-21T11:07:45.244Z"
             }
           ]
         }

@@ -106,12 +106,27 @@ public class NPCLlama : MonoBehaviour
                             break;
                         default:
                             conversation_number = conversation_number + 1;
-                            manager.updateLevel(5);
+                            manager.updateLevel(10);
                             ConversationEnded();
                             break;
                     }
                     break;
                 case 1:
+                    switch (dialogue_number)
+                    {
+                        case 1:
+                            NewDialogue("[A random llama]: Don't walk the grass...");
+                            break;
+                        case 2:
+                            NewDialogue("[A random llama]: Nom nom nom ...");
+                            break;
+                        default:
+                            conversation_number = conversation_number + 1;
+                            ConversationEnded();
+                            break;
+                    }
+                    break;
+                case 2:
                     switch (dialogue_number)
                     {
                         case 1:

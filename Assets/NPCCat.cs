@@ -83,6 +83,9 @@ public class NPCCat : MonoBehaviour
         ContinueText.SetText("");
 
         dialogue_number = 0;
+        cupcake_dialogue = 0;
+        options_display = false;
+        buttonClicked = 0;
     }
 
     void NewDialogue(string text)
@@ -118,10 +121,6 @@ public class NPCCat : MonoBehaviour
         {
             if (manager.getCupcakes() != 0 && conversation_number > 0)
             {
-                //print(1);
-                //print(manager.getCupcakes());
-                //print(player.getDialogueNPC());
-                //print(conversation_number);
 
                 if (options_display == true)
                 {
@@ -175,7 +174,7 @@ public class NPCCat : MonoBehaviour
                             NewDialogue("[Robin]: Are you sure about that? Well... I won't ask you twice! You are such a cutie-pie!!!");
                             if (gave_reward == false)
                             {
-                                manager.updateLevel(25);
+                                manager.updateLevel(20);
                                 gave_cupcakes = 2;
                                 gave_reward = true;
                             }
@@ -191,7 +190,7 @@ public class NPCCat : MonoBehaviour
                             //cupcake_dialogue += 2;
                             if (gave_reward == false)
                             {
-                                manager.updateLevel(20);
+                                manager.updateLevel(10);
                                 gave_cupcakes = 2;
                                 gave_reward = true;
                             }
@@ -250,7 +249,6 @@ public class NPCCat : MonoBehaviour
                                     break;
                                 default:
                                     conversation_number = conversation_number + 1;
-                                    manager.updateLevel(5);
                                     ConversationEnded();
                                     break;
                             }

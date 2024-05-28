@@ -93,7 +93,7 @@ public class NicePig : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.F))
                 dialogue_number = dialogue_number + 1;
 
-            if (conversation_number != 10)
+            if (conversation_number % 10 == 0)
             {
                 switch (dialogue_number)
                 {

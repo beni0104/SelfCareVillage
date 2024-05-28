@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class FirstPersonController : MonoBehaviour
 {
@@ -25,10 +26,14 @@ public class FirstPersonController : MonoBehaviour
 
     private StartGame intro;
 
+    private HappinessManager manager;
+
 
     CharacterController characterController;
     void Start()
     {
+        manager = FindAnyObjectByType<HappinessManager>();
+
         PausePanel.SetActive(false);
         characterController = GetComponent<CharacterController>();
         Cursor.lockState = CursorLockMode.Locked;
@@ -65,6 +70,12 @@ public class FirstPersonController : MonoBehaviour
 
         if (dialogueState == false && Time.timeScale == 1)
         {
+            if(characterController.transform.position.y < -20)
+            {
+                manager.end_game(3);
+                SceneManager.LoadScene("EndGame");
+            }
+
             //Handles Movement
             Vector3 forward = transform.TransformDirection(Vector3.forward);
             Vector3 right = transform.TransformDirection(Vector3.right);
