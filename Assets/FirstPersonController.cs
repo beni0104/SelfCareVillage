@@ -11,11 +11,22 @@ public class FirstPersonController : MonoBehaviour
     public float jumpPower = 7f;
     public float gravity = 10f;
     public GameObject PausePanel;
-    
+
+    public bool isFirstPersonView = true;
+    public Transform Targetposition;
+    public int speed = 1;
 
     public float lookSpeed = 2f;
     public float lookXLimit = 45f;
-    
+
+    //private Vector3 firstPersonPosition = new Vector3(2, 0, 2);
+    //private Quaternion firstPersonRotation = Quaternion.Euler(0, 0, 0);
+
+    //private Vector3 thirdPersonPosition = new Vector3(0, 14, -14);
+    //private Quaternion thirdPersonRotation = Quaternion.Euler(55, 0, 15);
+
+    private Vector3 firstPersonOffset = new Vector3(2, 0, 2); // Adjust as needed
+    private Vector3 thirdPersonOffset = new Vector3(0, 14, -14); // Adjust as needed
 
     Vector3 moveDirection = Vector3.zero;
     float rotationX = 0;
@@ -40,6 +51,9 @@ public class FirstPersonController : MonoBehaviour
         Cursor.visible = false;
 
         intro = FindObjectOfType<StartGame>();
+
+        Targetposition.position = transform.position + transform.TransformDirection(firstPersonOffset);
+        Targetposition.rotation = transform.rotation;
     }
 
     public void changeDialogueState(bool value, string NPC)
@@ -67,6 +81,14 @@ public class FirstPersonController : MonoBehaviour
             Cursor.visible = true;
             Time.timeScale = 0;
         }
+
+        if (Input.GetKeyDown(KeyCode.V))
+        {
+            ToggleView();
+        }
+
+        playerCamera.transform.position = Vector3.Lerp(playerCamera.transform.position, Targetposition.position, speed * Time.deltaTime);
+        playerCamera.transform.rotation = Quaternion.Lerp(playerCamera.transform.rotation, Targetposition.rotation, speed * Time.deltaTime);
 
         if (dialogueState == false && Time.timeScale == 1)
         {
@@ -114,5 +136,21 @@ public class FirstPersonController : MonoBehaviour
                 transform.rotation *= Quaternion.Euler(0, Input.GetAxis("Mouse X") * lookSpeed, 0);
             }
         }
+    }
+
+    private void ToggleView()
+    {
+        if (isFirstPersonView)
+        {
+            Targetposition.position = transform.position + transform.TransformDirection(thirdPersonOffset);
+            Targetposition.rotation = Quaternion.LookRotation(transform.position - Targetposition.position);
+        }
+        else
+        {
+            Targetposition.position = transform.position + transform.TransformDirection(firstPersonOffset);
+            Targetposition.rotation = transform.rotation;
+        }
+
+        isFirstPersonView = !isFirstPersonView;
     }
 }

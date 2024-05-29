@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using TMPro;
 using UnityEngine.SceneManagement;
 
@@ -11,6 +12,10 @@ public class HappinessManager : MonoBehaviour
 
     [SerializeField] private TextMeshProUGUI level;
     [SerializeField] private TextMeshProUGUI InteractiveTextDisplay;
+    
+    [SerializeField] private TextMeshProUGUI cupcakesFoundCounter;
+
+    [SerializeField] private RawImage toggleImage;
 
     static int cupcakes = 0;
     static bool pickedCupcake = false;
@@ -42,6 +47,17 @@ public class HappinessManager : MonoBehaviour
             resetInteractiveText();
             set_picked_cupcake = 0;
         }*/
+
+        if (pickedCupcake)
+        {
+            toggleImage.enabled = true;
+            cupcakesFoundCounter.enabled = true;
+        }
+        else
+        {
+            toggleImage.enabled = false;
+            cupcakesFoundCounter.enabled = false;
+        }
 
         if(happinessLevel > 100)
         {
@@ -102,6 +118,7 @@ public class HappinessManager : MonoBehaviour
     public void pickCupcake()
     {
         cupcakes = cupcakes + 1;
+        updateAmountDisplayed();
         pickedCupcake = true;
     }
 
@@ -113,6 +130,13 @@ public class HappinessManager : MonoBehaviour
     public void giveCupcakes()
     {
         cupcakes = 0;
+    }
+
+    public void updateAmountDisplayed()
+    {
+        string text = "" + cupcakes + "/7";
+        cupcakesFoundCounter.SetText(text);
+        print(cupcakesFoundCounter);
     }
 
     // -------------------------------------------------------------------------------------
